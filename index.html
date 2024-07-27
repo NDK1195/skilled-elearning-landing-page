@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
-  <body class="flex min-h-screen flex-col bg-gradient-page">
-    <header class="relative mb-16 overflow-hidden pt-4 md:pb-[210px] md:pt-6">
+  <body class="bg-gradient-page">
+    <header class="mb-16 overflow-hidden pt-4 md:pb-[210px] md:pt-6">
       <nav
         class="mb-9 flex items-center justify-between px-4 md:mb-[100px] md:px-10 lg:mb-[172px] lg:px-[165px]"
       >
@@ -26,57 +26,52 @@
         >
       </nav>
 
-      <div class="">
-        <div class="flex flex-col items-center gap-[70px] md:flex-row md:gap-3">
-          <div
-            class="flex flex-col gap-6 px-4 md:max-w-[457px] md:pl-10 md:pr-0 lg:max-w-[625px] lg:pl-[165px]"
+      <div class="flex flex-col items-center gap-[70px] md:flex-row md:gap-3">
+        <div
+          class="flex flex-col gap-6 px-4 md:min-w-[398px] md:pl-10 md:pr-0 lg:max-w-[50%] xl:max-w-[622px] xl:pl-[165px]"
+        >
+          <h2
+            class="text-[40px] font-extrabold leading-none text-13183F xl:text-[56px]"
           >
-            <h2
-              class="text-[40px] font-extrabold leading-none text-13183F xl:text-[56px]"
-            >
-              Maximize skill,<br />
-              minimize budget
-            </h2>
-            <p
-              class="text-base leading-[26px] text-83869A lg:mb-4 lg:text-lg lg:leading-7 lg:tracking-wide"
-            >
-              Our modern courses across a range of in-demand skills will give
-              you the knowledge you need to live the life you want.
-            </p>
-            <a
-              href="#"
-              class="inline-block w-fit rounded-[28px] bg-gradient-1 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all hover:bg-hover-gradient-1 md:px-9 md:py-4 lg:px-8 lg:text-lg lg:leading-7"
-              >Get Started</a
-            >
-          </div>
-          <!-- hero content -->
-          <div
-            class="md:absolute md:-right-1/2 md:bottom-0 md:max-w-[640.714px] md:-translate-x-1/2 lg:max-w-[991.631px]"
+            Maximize skill, minimize budget
+          </h2>
+          <p
+            class="text-base leading-[26px] text-83869A lg:mb-4 lg:text-lg lg:leading-7 lg:tracking-wide"
           >
-            <picture>
-              <source
-                media="(min-width:1024px)"
-                srcset="./assets/image-hero-desktop@2x.png"
-              />
-              <source
-                media="(min-width:768px)"
-                srcset="./assets/image-hero-tablet@2x.png"
-              />
-
-              <img
-                src="./assets/image-hero-mobile@2x.png"
-                alt="hero image"
-                class="inline-block w-full"
-              />
-            </picture>
-          </div>
-          <!-- hero image -->
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a
+            href="#"
+            class="inline-block w-fit rounded-[28px] bg-gradient-1 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all hover:bg-hover-gradient-1 md:px-9 md:py-4 lg:px-8 lg:text-lg lg:leading-7"
+            >Get Started</a
+          >
         </div>
+        <!-- hero content -->
+        <div class="relative min-w-[327px] px-4 md:px-0">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcset="./assets/image-hero-desktop@2x.png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/image-hero-tablet@2x.png"
+            />
+
+            <img
+              src="./assets/image-hero-mobile@2x.png"
+              alt="hero image"
+              class="inline-block w-full scale-125 md:absolute md:-right-[35%] md:-top-[210px] md:scale-[2] lg:-right-[100%] lg:-top-[300px] lg:scale-[2.75] xl:-right-[140%] xl:-top-[250px]"
+            />
+          </picture>
+        </div>
+        <!-- hero image -->
       </div>
     </header>
 
     <main
-      class="grid grid-cols-1 gap-10 px-4 pb-20 md:grid-cols-2 md:gap-x-[10px] md:gap-y-14 md:px-10 md:pb-[86px] lg:mb-[140px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-20 xl:px-[165px]"
+      class="mb-20 grid grid-cols-1 gap-10 px-4 md:mb-[86px] md:grid-cols-2 md:gap-x-[10px] md:gap-y-14 md:px-10 lg:mb-[140px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-20 xl:px-[165px]"
     >
       <div
         class="rounded-[10px] bg-gradient-1 px-7 pb-8 pt-6 text-2xl font-extrabold leading-8 text-white md:pt-14 lg:pt-16 lg:text-[32px] lg:leading-10"
@@ -217,7 +212,7 @@
     </main>
 
     <footer
-      class="mt-auto flex items-center justify-between bg-13183F px-4 py-9 md:px-10"
+      class="relative bottom-0 left-0 right-0 flex items-center justify-between bg-13183F px-4 py-9 md:px-10"
     >
       <img src="./assets/logo-light.svg" alt="logo" />
       <a
