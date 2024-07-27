@@ -14,46 +14,55 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body class="bg-gradient-page">
-    <header class="mb-16 pt-4">
-      <nav class="mb-9 flex items-center justify-between px-4">
+    <header class="mb-16 overflow-hidden pt-4 md:pb-[210px] md:pt-6">
+      <nav
+        class="mb-9 flex items-center justify-between px-4 md:mb-[100px] md:px-10 lg:mb-[172px] lg:px-[165px]"
+      >
         <h1><img src="./assets/logo-dark.svg" alt="logo" /></h1>
         <a
           href="#"
-          class="inline-block rounded-[28px] bg-13183F px-6 py-3 text-base font-bold leading-7 text-white transition-colors hover:bg-666CA3"
+          class="inline-block rounded-[28px] bg-13183F px-6 py-3 text-base font-bold leading-7 text-white transition-colors hover:bg-666CA3 lg:px-8 lg:py-[14px] lg:text-lg"
           >Get Started</a
         >
       </nav>
 
-      <div class="flex flex-col gap-[70px]">
-        <div class="flex flex-col gap-6 px-4">
-          <h2 class="text-[40px] font-extrabold leading-none text-13183F">
+      <div class="flex flex-col items-center gap-[70px] md:flex-row md:gap-3">
+        <div
+          class="flex flex-col gap-6 px-4 md:min-w-[398px] md:pl-10 md:pr-0 lg:max-w-[50%] xl:max-w-[622px] xl:pl-[165px]"
+        >
+          <h2
+            class="text-[40px] font-extrabold leading-none text-13183F xl:text-[56px]"
+          >
             Maximize skill, minimize budget
           </h2>
-          <p class="text-base leading-[26px] text-83869A">
+          <p
+            class="text-base leading-[26px] text-83869A lg:mb-4 lg:text-lg lg:leading-7 lg:tracking-wide"
+          >
             Our modern courses across a range of in-demand skills will give you
             the knowledge you need to live the life you want.
           </p>
           <a
             href="#"
-            class="hover:bg-hover-gradient-1 inline-block w-fit rounded-[28px] bg-gradient-1 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all"
+            class="inline-block w-fit rounded-[28px] bg-gradient-1 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all hover:bg-hover-gradient-1 md:px-9 md:py-4 lg:px-8 lg:text-lg lg:leading-7"
             >Get Started</a
           >
         </div>
         <!-- hero content -->
-        <div>
+        <div class="relative min-w-[327px] px-4 md:px-0">
           <picture>
             <source
-              media="(min-width: 768px)"
-              srcset="./assets/image-hero-tablet@2x.png"
-            />
-            <source
-              media="(min-width: 1024px)"
+              media="(min-width:1024px)"
               srcset="./assets/image-hero-desktop@2x.png"
             />
+            <source
+              media="(min-width:768px)"
+              srcset="./assets/image-hero-tablet@2x.png"
+            />
+
             <img
               src="./assets/image-hero-mobile@2x.png"
               alt="hero image"
-              class="inline-block w-full"
+              class="inline-block w-full scale-125 md:absolute md:-right-[35%] md:-top-[210px] md:scale-[2] lg:-right-[100%] lg:-top-[300px] lg:scale-[2.75] xl:-right-[140%] xl:-top-[250px]"
             />
           </picture>
         </div>
@@ -62,24 +71,30 @@
     </header>
 
     <main
-      class="mb-20 grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3"
+      class="mb-20 grid grid-cols-1 gap-10 px-4 md:mb-[86px] md:grid-cols-2 md:gap-x-[10px] md:gap-y-14 md:px-10 lg:mb-[140px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-20 xl:px-[165px]"
     >
       <div
-        class="rounded-[10px] bg-gradient-1 px-7 pb-8 pt-6 text-2xl font-extrabold leading-8 text-white"
+        class="rounded-[10px] bg-gradient-1 px-7 pb-8 pt-6 text-2xl font-extrabold leading-8 text-white md:pt-14 lg:pt-16 lg:text-[32px] lg:leading-10"
       >
         Check out our most popular courses!
       </div>
       <!-- box 1 -->
-      <div class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+      <div
+        class="relative rounded-[10px] bg-white px-7 pb-8 pt-14 md:px-8 lg:pb-10 lg:pt-16"
+      >
         <img
           src="./assets/icon-animation.svg"
           alt="icon animation"
           class="absolute -top-7 left-7"
         />
-        <h3 class="mb-4 text-xl font-extrabold leading-none text-13183F">
+        <h3
+          class="mb-4 text-xl font-extrabold leading-none text-13183F lg:text-2xl"
+        >
           Animation
         </h3>
-        <p class="mb-6 text-base leading-[26px] text-83869A">
+        <p
+          class="mb-6 text-base leading-[26px] text-83869A lg:text-lg lg:leading-7"
+        >
           Learn the latest animation techniques to create stunning motion design
           and captivate your audience.
         </p>
@@ -90,16 +105,22 @@
         >
       </div>
       <!-- box -->
-      <div class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+      <div
+        class="relative rounded-[10px] bg-white px-7 pb-8 pt-14 md:px-8 lg:pb-10 lg:pt-16"
+      >
         <img
           src="./assets/icon-design.svg"
           alt="icon design"
           class="absolute -top-7 left-7"
         />
-        <h3 class="mb-4 text-xl font-extrabold leading-none text-13183F">
+        <h3
+          class="mb-4 text-xl font-extrabold leading-none text-13183F lg:text-2xl"
+        >
           Design
         </h3>
-        <p class="mb-6 text-base leading-[26px] text-83869A">
+        <p
+          class="mb-6 text-base leading-[26px] text-83869A lg:text-lg lg:leading-7"
+        >
           Create beautiful, usable interfaces to help shape the future of how
           the web looks.
         </p>
@@ -110,16 +131,22 @@
         >
       </div>
       <!-- box -->
-      <div class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+      <div
+        class="relative rounded-[10px] bg-white px-7 pb-8 pt-14 md:px-8 lg:pb-10 lg:pt-16"
+      >
         <img
           src="./assets/icon-photography.svg"
           alt="icon photography"
           class="absolute -top-7 left-7"
         />
-        <h3 class="mb-4 text-xl font-extrabold leading-none text-13183F">
+        <h3
+          class="mb-4 text-xl font-extrabold leading-none text-13183F lg:text-2xl"
+        >
           Photography
         </h3>
-        <p class="mb-6 text-base leading-[26px] text-83869A">
+        <p
+          class="mb-6 text-base leading-[26px] text-83869A lg:text-lg lg:leading-7"
+        >
           Explore critical fundamentals like lighting, composition, and focus to
           capture exceptional photos.
         </p>
@@ -130,16 +157,22 @@
         >
       </div>
       <!-- box -->
-      <div class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+      <div
+        class="relative rounded-[10px] bg-white px-7 pb-8 pt-14 md:px-8 lg:pb-10 lg:pt-16"
+      >
         <img
           src="./assets/icon-crypto.svg"
           alt="icon crypto"
           class="absolute -top-7 left-7"
         />
-        <h3 class="mb-4 text-xl font-extrabold leading-none text-13183F">
+        <h3
+          class="mb-4 text-xl font-extrabold leading-none text-13183F lg:text-2xl"
+        >
           Crypto
         </h3>
-        <p class="mb-6 text-base leading-[26px] text-83869A">
+        <p
+          class="mb-6 text-base leading-[26px] text-83869A lg:text-lg lg:leading-7"
+        >
           All you need to know to get started investing in crypto. Go from
           beginner to advanced with this 54 hour course.
         </p>
@@ -150,16 +183,22 @@
         >
       </div>
       <!-- box -->
-      <div class="relative rounded-[10px] bg-white px-7 pb-8 pt-14">
+      <div
+        class="relative rounded-[10px] bg-white px-7 pb-8 pt-14 md:px-8 lg:pb-10 lg:pt-16"
+      >
         <img
           src="./assets/icon-business.svg"
           alt="icon business"
           class="absolute -top-7 left-7"
         />
-        <h3 class="mb-4 text-xl font-extrabold leading-none text-13183F">
+        <h3
+          class="mb-4 text-xl font-extrabold leading-none text-13183F lg:text-2xl"
+        >
           Business
         </h3>
-        <p class="mb-6 text-base leading-[26px] text-83869A">
+        <p
+          class="mb-6 text-base leading-[26px] text-83869A lg:text-lg lg:leading-7"
+        >
           A step-by-step playbook to help you start, scale, and sustain your
           business without outside investment.
         </p>
@@ -172,11 +211,13 @@
       <!-- box -->
     </main>
 
-    <footer class="flex items-center justify-between bg-13183F px-4 py-9">
+    <footer
+      class="relative bottom-0 left-0 right-0 flex items-center justify-between bg-13183F px-4 py-9 md:px-10"
+    >
       <img src="./assets/logo-light.svg" alt="logo" />
       <a
         href="#"
-        class="hover:bg-hover-gradient-2 inline-block w-fit rounded-[28px] bg-gradient-2 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all"
+        class="inline-block w-fit rounded-[28px] bg-gradient-2 px-6 py-3 text-base font-bold leading-[26px] text-white transition-all hover:bg-hover-gradient-2"
         >Get Started</a
       >
     </footer>
