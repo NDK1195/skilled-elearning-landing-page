@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
-  <body class="bg-gradient-page">
-    <header class="mb-16 overflow-hidden pt-4 md:pb-[210px] md:pt-6">
+  <body class="flex min-h-screen flex-col bg-gradient-page">
+    <header class="overflow-hidden pb-16 pt-4 md:pb-[210px] md:pt-6">
       <nav
         class="mb-9 flex items-center justify-between px-4 md:mb-[100px] md:px-10 lg:mb-[172px] lg:px-[165px]"
       >
@@ -26,9 +26,11 @@
         >
       </nav>
 
-      <div class="flex flex-col items-center gap-[70px] md:flex-row md:gap-3">
+      <div
+        class="relative flex flex-col items-center gap-[70px] md:flex-row md:justify-between md:gap-3"
+      >
         <div
-          class="flex flex-col gap-6 px-4 md:min-w-[398px] md:pl-10 md:pr-0 lg:max-w-[50%] xl:max-w-[622px] xl:pl-[165px]"
+          class="flex flex-col gap-6 px-4 md:min-w-[398px] md:max-w-[457px] md:pl-10 md:pr-0 lg:max-w-[622px] lg:pl-[165px]"
         >
           <h2
             class="text-[40px] font-extrabold leading-none text-13183F xl:text-[56px]"
@@ -48,7 +50,9 @@
           >
         </div>
         <!-- hero content -->
-        <div class="relative min-w-[327px] px-4 md:px-0">
+        <div
+          class="min-w-[327px] px-4 md:absolute md:-right-[275px] md:-top-[250px] md:max-w-[640.714px] md:px-0 lg:-right-[310px] lg:-top-[400px] lg:max-w-[991.631px]"
+        >
           <picture>
             <source
               media="(min-width:1024px)"
@@ -62,7 +66,7 @@
             <img
               src="./assets/image-hero-mobile@2x.png"
               alt="hero image"
-              class="inline-block w-full scale-125 md:absolute md:-right-[35%] md:-top-[210px] md:scale-[2] lg:-right-[100%] lg:-top-[300px] lg:scale-[2.75] xl:-right-[140%] xl:-top-[250px]"
+              class="inline-block w-full"
             />
           </picture>
         </div>
@@ -212,7 +216,7 @@
     </main>
 
     <footer
-      class="relative bottom-0 left-0 right-0 flex items-center justify-between bg-13183F px-4 py-9 md:px-10"
+      class="mt-auto flex items-center justify-between bg-13183F px-4 py-9 md:px-10"
     >
       <img src="./assets/logo-light.svg" alt="logo" />
       <a
